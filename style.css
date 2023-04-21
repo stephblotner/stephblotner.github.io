@@ -20,14 +20,22 @@ header{
   height:60px;
   margin:0 auto 40px auto;
   display:block;
+  text-decoration: none;
 }
 
 header h1{
   display:inline;
   width:300px;
+  text-decoration: none;
 }
+
+header h1 a{
+  text-decoration: none;
+}
+
 header h1 span{
   font-weight:300;
+  text-decoration: none;
 }
 header ul{
   float:right;
