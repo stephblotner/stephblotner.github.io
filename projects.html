@@ -14,28 +14,33 @@
   // ga('send', 'pageview');
 
   </script>
-  <style>
+<style>
+    /* Match the existing design system */
     #publications {
-      max-width: 1200px;
+      font-weight: 300;
+      width: 670px;
       margin: 0 auto;
-      padding: 0 20px;
+      font-size: 20px;
+      line-height: 35px;
     }
 
     #publications h2 {
-      font-size: 1.8em;
+      font-size: 24px;
       margin: 40px 0 30px 0;
-      font-weight: normal;
+      font-weight: 300;
+      padding-left: 10px;
     }
 
     #publications h2:first-child {
-      margin-top: 60px;
+      margin-top: 0;
     }
 
     .content-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-      margin-bottom: 60px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-bottom: 50px;
+      padding: 0 10px;
     }
 
     .content-card {
@@ -44,6 +49,7 @@
       overflow: hidden;
       transition: box-shadow 0.3s ease, transform 0.2s ease;
       background: white;
+      font-size: 16px;
     }
 
     .content-card:hover {
@@ -59,59 +65,56 @@
 
     .content-image {
       width: 100%;
-      height: 200px;
+      height: 180px;
       object-fit: cover;
       display: block;
     }
 
     .content-info {
-      padding: 20px;
+      padding: 18px;
     }
 
     .content-info h3 {
-      margin: 0 0 12px 0;
-      font-size: 1.1em;
-      font-weight: 600;
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      font-weight: 500;
       line-height: 1.3;
-      color: #333;
+      color: #272727;
     }
 
     .content-info p {
       margin: 0;
       color: #666;
-      font-size: 0.9em;
-      line-height: 1.5;
+      font-size: 14px;
+      line-height: 1.4;
+      font-weight: 300;
     }
 
     .content-card.placeholder {
       opacity: 0.6;
     }
 
-    /* Responsive adjustments */
+    /* Responsive design that works with your existing layout */
     @media (max-width: 768px) {
-      .content-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-      
       #publications {
+        width: 90%;
         padding: 0 15px;
       }
       
-      #publications h2:first-child {
-        margin-top: 40px;
+      .content-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0;
+      }
+      
+      .content-image {
+        height: 200px;
       }
     }
 
-    @media (max-width: 1024px) and (min-width: 769px) {
-      .content-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (min-width: 1025px) {
-      .content-grid {
-        gap: 40px;
+    @media (max-width: 670px) {
+      #publications {
+        width: 95%;
       }
     }
   </style>
