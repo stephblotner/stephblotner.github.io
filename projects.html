@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Stephanie Blotner</title>
+  <title>Stephanie Blotner - Publications & Media</title>
   <link href="main.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="style.css" type="text/css">
   <script>
@@ -14,22 +14,137 @@
   // ga('send', 'pageview');
 
   </script>
+<style>
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .content-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .content-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .content-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .content-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .content-info {
+      padding: 15px;
+    }
+
+    .content-info h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.1em;
+    }
+
+    .content-info p {
+      margin: 0;
+      color: #666;
+      font-size: 0.9em;
+      line-height: 1.4;
+    }
+
+    .content-card.placeholder {
+      opacity: 0.6;
+    }
+
+    @media (max-width: 768px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 1024px) and (min-width: 769px) {
+      .content-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
  </head>
  <body>
   <div id="main">
     <header>
-      <h1><span>Stephanie</span>Blotner <span>| Projects</span></h1>
+      <h1><span>Stephanie</span>Blotner <span>| Publications & Media</span></h1>
       <ul class="links">
+        <li><a href="index.html">Home</a></li>
         <li><a href="https://www.linkedin.com/in/stephanieblotner/">LinkedIn</a></li>
-				<li><a href="https://medium.com/@sblotner">Medium</a></li>
+				<li><a href="projects.html">Publications & Media</a></li>
       </ul>
     </header>
-    <section id="about">
-      <ul>
-        <li><a href="https://www.stephanieblotner.com">Personal Website</a></li>
+<section id="publications">
+      <h2>Articles</h2>
+      <div class="content-grid">
+        <div class="content-card">
+          <a href="https://increment.com/documentation/primer-on-documentation-content-strategy/">
+            <img src="/images/Increment.jpeg" alt="Increment Magazine artwork by Ori Toor" class="content-image">
+            <div class="content-info">
+              <h3>A Primer on Documentation Content Strategy</h3>
+              <p>Tips to help engineering teams produce high-quality documentation—with or without the support of designated technical writers.</p>
+            </div>
+          </a>
+        </div>
+        
+        <div class="content-card">
+          <a href="https://medium.com/@sblotner">
+            <img src="/images/Medium.png" alt="Headshot of Steph" class="content-image">
+            <div class="content-info">
+              <h3>@sblotner on Medium</h3>
+              <p>Collection of blogs about knowledge sharing and empathy for developers.</p>
+            </div>
+          </a>
+        </div>
+      </div>
 
-      </ul>
+      <h2>Interviews</h2>
+      <div class="content-grid">
+        <div class="content-card">
+          <a href="https://plusplus.co/ideas/technical-documentation/">
+            <img src="/images/PlusPlus.jpeg" alt="Plus Plus TechDoc Panelists" class="content-image">
+            <div class="content-info">
+              <h3>Technical Documentation: 4 Experts Share What Keeps a Company on Track</h3>
+              <p>A panel of writing leaders from LinkedIn, Uber, Spotify, and Splunk discussed the challenges of internal engineering docs at scale.</p>
+            </div>
+          </a>
+        </div>
+        
+        <div class="content-card">
+          <a href="https://www.infracost.io/blog/docs-review-with-leaders-from-stripe-and-uber/ ">
+            <img src="/images/Infracost.jpeg" alt="Infracost documentation" class="content-image">
+            <div class="content-info">
+              <h3>Doc Best Practices: Infracost Docs Review with Leaders From Stripe and Uber</h3>
+              <p>A discussion of how early-stage startups can think about technical docs as a key part of their product.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="content-card">
+          <a href="https://slab.com/blog/ubers-apporach-to-getting-more-engineers-to-document/">
+            <img src="/images/Slab.jpeg" alt="Car on books" class="content-image">
+            <div class="content-info">
+              <h3>Uber’s 3-Step Approach to Getting More Engineers to Document</h3>
+              <p>A summary of how Uber motivated engineers to invest in documentation.</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
     </section>
   </div>
-</body>
-</html>
+</body></html>
